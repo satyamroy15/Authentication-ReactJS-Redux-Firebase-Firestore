@@ -1,0 +1,36 @@
+[debug] [2020-09-13T06:32:09.289Z] ----------------------------------------------------------------------
+[debug] [2020-09-13T06:32:09.293Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Satyam R\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions
+[debug] [2020-09-13T06:32:09.293Z] CLI Version:   8.10.0
+[debug] [2020-09-13T06:32:09.293Z] Platform:      win32
+[debug] [2020-09-13T06:32:09.294Z] Node Version:  v12.16.3
+[debug] [2020-09-13T06:32:09.295Z] Time:          Sun Sep 13 2020 12:02:09 GMT+0530 (India Standard Time)
+[debug] [2020-09-13T06:32:09.296Z] ----------------------------------------------------------------------
+[debug] [2020-09-13T06:32:09.296Z] 
+[debug] [2020-09-13T06:32:09.315Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-13T06:32:09.317Z] > authorizing via signed-in user
+[debug] [2020-09-13T06:32:09.318Z] [iam] checking project authit-8782e for permissions ["firebase.projects.get"]
+[debug] [2020-09-13T06:32:09.325Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/authit-8782e:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-09-13T06:32:11.173Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 13 Sep 2020 06:32:11 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1341","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-13T06:32:11.177Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/authit-8782e  
+ 
+[debug] [2020-09-13T06:32:13.215Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 13 Sep 2020 06:32:12 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-13T06:32:13.716Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at validateString (internal/validators.js:117:11)
+    at Object.join (path.js:375:7)
+    at Object.<anonymous> (C:\Users\Satyam R\AppData\Roaming\npm\node_modules\firebase-tools\lib\serve\functions.js:22:39)
+    at Generator.next (<anonymous>)
+    at C:\Users\Satyam R\AppData\Roaming\npm\node_modules\firebase-tools\lib\serve\functions.js:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\Satyam R\AppData\Roaming\npm\node_modules\firebase-tools\lib\serve\functions.js:4:12)
+    at Object.start (C:\Users\Satyam R\AppData\Roaming\npm\node_modules\firebase-tools\lib\serve\functions.js:20:16)
+    at C:\Users\Satyam R\AppData\Roaming\npm\node_modules\firebase-tools\lib\serve\index.js:24:40
+    at arrayMap (C:\Users\Satyam R\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\lodash\lodash.js:639:23)
+    at Function.map (C:\Users\Satyam R\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\lodash\lodash.js:9580:14)
+    at C:\Users\Satyam R\AppData\Roaming\npm\node_modules\firebase-tools\lib\serve\index.js:23:29
+    at Generator.next (<anonymous>)
+    at C:\Users\Satyam R\AppData\Roaming\npm\node_modules\firebase-tools\lib\serve\index.js:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\Satyam R\AppData\Roaming\npm\node_modules\firebase-tools\lib\serve\index.js:4:12)
+[error] 
+[error] Error: An unexpected error has occurred.
